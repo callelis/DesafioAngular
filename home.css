@@ -1,0 +1,17 @@
+
+.seçãoFundo{
+    position: relative;
+    background-color: red;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+.imgFundo{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    display: block;  
+}

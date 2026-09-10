@@ -3,24 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="login.css">
     <title>Ford Login Page</title>
 </head>
+
 <body>
-    <div class ="seçãoEsquerda">
-        <p>IMAGEM</p>
-    </div>
-    <div class ="seçãoDireita">
-        <div class="login">
-            <h1>Bem-vindo(a)!</h1>
-            <form action="login.php" method="post">
-                <label for="user">Usuário:</label>
-                <input type="text" id="user" name="user" required><br><br>
-                <label for="senha">Senha:</label>
-                <input type="password" id="senha" name="senha" required><br><br>
-                <input type="submit" value="Entrar">
-            </form>
+    <div class="login">
+
+        <div class ="seçãoEsquerda">
+            <p>IMAGEM</p>
         </div>
 
+        <div class="seçãoDireita">
+            <div class="formLogin">
+                <img class="imgLogo"src="img/ford.png" alt="Logo da Ford">
+
+                <h2>Bem-vindo(a)!</h2>
+                <form>
+                    <div class="campo">
+                        <label for="usuario">Usuário:</label>
+                        <input type="text" id="usuario" placeholder="Digite o usuário." required>
+                    </div>
+
+                    <div class="campo">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" placeholder="Digite a senha." required>
+                    </div>
+
+                    <div class="campoCheckbox">
+                        <input type="checkbox" id="boxLogin">
+                        <label for="boxLogin">Logar automaticamente</label>
+                    </div>
+
+                    <button type="submit" class="botaoLogin">Entrar</button>
+
+                </form>
+            </div>
+        </div>
     </div>
 </body>
 </html>

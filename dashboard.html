@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dashboard.css">
+    <script src="dashboard.js" defer></script>
+    <title>Dashboard FORD</title>
+</head>
+
+<body>
+
+    <!-- Botão do Menu Hambúrguer -->
+    <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+    <!-- Menu Lateral (Sidebar) e Overlay -->
+    <div class="overlay" id="overlay"></div>
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="img/ford.png" alt="Ford Logo" class="sidebar-logo">
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li class="active"><a href="dashboard.html">Dashboard</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <!-- Conteúdo Principal do Dashboard -->
+    <div class="dashboard-container">
+        
+        <!-- Título -->
+        <h1 class="dashboard-title">Dashboard FORD</h1>
+
+        <!-- Seção Superior de Cards -->
+        <div class="cards-grid">
+            
+            <!-- Card Filtro de Veículo -->
+            <div class="card-item">
+                <label for="veiculo-select" class="card-title">Veículo</label>
+                <div class="select-wrapper">
+                    <select id="veiculo-select">
+                        <option value="ranger">Ranger</option>
+                        <option value="mustang" selected>Mustang</option>
+                        <option value="territory">Territory</option>
+                        <option value="bronco">Bronco Sport</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Card Total de Vendas -->
+            <div class="card-item">
+                <span class="card-title">Total de Vendas</span>
+                <div class="card-value">1500</div>
+                <span class="card-unit">Unid.</span>
+            </div>
+
+            <!-- Card Conectados -->
+            <div class="card-item">
+                <span class="card-title">Conectados</span>
+                <div class="card-value">500</div>
+                <span class="card-unit">Unid.</span>
+            </div>
+
+            <!-- Card Update Software -->
+            <div class="card-item">
+                <span class="card-title">Update Software</span>
+                <div class="card-value">750</div>
+                <span class="card-unit">Unid.</span>
+            </div>
+
+        </div>
+
+        <!-- Imagem do Veículo no Centro -->
+        <div class="car-image-container">
+            <img src="img/mustang.png" alt="Ford Mustang" id="car-img">
+        </div>
+
+        <!-- Tabela de Dados do Veículo -->
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Código - Vin</th>
+                        <th>Odômetro</th>
+                        <th>Nível de Combustível</th>
+                        <th>Status</th>
+                        <th>Lat.</th>
+                        <th>Long.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" value="2FRHDUYS2Y63NHD22455" readonly class="vin-input"></td>
+                        <td>50000 Km</td>
+                        <td>90 %</td>
+                        <td>on</td>
+                        <td>-12,2322</td>
+                        <td>-38,2314</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+</body>
+
+</html>

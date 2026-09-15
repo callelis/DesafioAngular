@@ -50,7 +50,7 @@ const vehicles = {
         lon: "-38,5200"
     },
     bronco: {
-        image: "img/broncoSport.png",
+        image: "img/bronco.png",
         alt: "Ford Bronco Sport",
         sales: 1700,
         connected: 580,
@@ -96,5 +96,7 @@ function updateVehicleInfo(vehicleKey) {
 selectVehicle.addEventListener("change", (event) => {
     updateVehicleInfo(event.target.value);
 });
+
+    
 
 updateVehicleInfo(selectVehicle.value);

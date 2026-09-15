@@ -10,7 +10,7 @@
 <body>
     <div class="login">
 
-        <div class ="seçãoEsquerda">
+        <div class="seçãoEsquerda">
             <img class="imgLogin" src="img/ranger.png" alt="Ford Ranger">
         </div>
 
@@ -19,7 +19,8 @@
                 <img class="imgLogo" src="img/ford.png" alt="Logo da Ford">
 
                 <h2>Bem-vindo(a)!</h2>
-                <form>
+
+                <form id="loginForm" novalidate>
                     <div class="campo">
                         <label for="usuario">Usuário:</label>
                         <input type="text" id="usuario" placeholder="Digite o usuário." required>
@@ -37,9 +38,12 @@
 
                     <button type="submit" class="botaoLogin">Entrar</button>
 
+                    <p id="loginMensagem" aria-live="polite"></p>
                 </form>
             </div>
         </div>
     </div>
+
+    <script src="login.js" defer></script>
 </body>
 </html>
